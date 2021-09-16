@@ -24,7 +24,7 @@ Route::middleware(['auth:sanctum', 'verified'])->group(function (){
 
     // Routes Biens
     Route::get('/biens', function(){
-        return view('biens.accueil');
+        return view('biens.MyAccueil');
     })-> name('biens.accueil');
 
     Route::get('/biens/listeBiens', 'App\Http\Controllers\BienController@index')->name('biens.listeBiens');
@@ -65,7 +65,7 @@ Route::middleware(['auth:sanctum', 'verified'])->group(function (){
 
     // Routes Clients
     Route::get('/clients', function(){
-        return view('clients.accueil');
+        return view('clients.MyAccueil');
     })-> name('clients.accueil');
 
     Route::get('/clients/listeClients','App\Http\Controllers\ClientController@index')->name('clients.listeClients');
@@ -82,7 +82,7 @@ Route::middleware(['auth:sanctum', 'verified'])->group(function (){
 
     // Routes Locataires
     Route::get('/locations', function(){
-        return view('locations.accueil');
+        return view('locations.MyAccueil');
     })-> name('locations.accueil');
 
     Route::get('/locations/listeContrats','App\Http\Controllers\LocationController@index')->name('locations.listeContrats');

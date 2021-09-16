@@ -3,25 +3,25 @@
 @section ('mycontent')
     <div class ="flex items-center justify-center mt-10" >
        <!-- box-1 -->
-       <div class="mt-16 py-4 px-4 w-64 bg-white rounded-xl shadow-lg hover:shadow-xl transform hover:scale-110 transition duration-500 mx-auto md:mx-0 mr-3 pt-4">
+       <div class="px-4 py-4 pt-4 mx-auto mt-16 mr-3 transition duration-500 transform bg-white shadow-lg w-96 rounded-xl hover:shadow-xl hover:scale-110 md:mx-0">
         <div class="w-sm">
-          <img class="w-35 justify-center" src="{{asset('images/house.png')}}" alt="" />
-          <div class="mt-4  text-center">
-            <h1 class="text-xl text-indigo-600 font-bold">Bienvenue</h1>
+          <img class="justify-center w-35 h-35" src="{{asset('images/house.png')}}" alt="" />
+          <div class="mt-4 text-center">
+            <h1 class="text-xl font-bold text-indigo-600">Bienvenue</h1>
             <p class="mt-4 text-indigo-600">Vous êtes à la recherche d'un toît? Vous êtes au bon endroit.</p>
-            <button class=" mt-8 mb-4 py-2 pr-5 pl-5  rounded-full bg-gray-600 tracking-widest hover:bg-indigo-600 transition duration-200">PLUS</button>
+            <button class="py-2 pl-5 pr-5 mt-8 mb-4 font-bold tracking-widest transition duration-200 bg-gray-300 rounded-full hover:text-white hover:bg-indigo-600">PLUS</button>
           </div>
         </div>
       </div>
 
       <!-- box-2 -->
-      <div class="mt-16 py-4 px-8 w-64 bg-white rounded-xl shadow-lg hover:shadow-xl transform hover:scale-110 transition duration-500 mx-auto mr-4 ml-8">
+      <div class="px-8 py-4 mx-auto mt-16 ml-8 mr-4 transition duration-500 transform bg-white shadow-lg w-96 rounded-xl hover:shadow-xl hover:scale-110">
         <div class="w-sm">
-          <img class="w-35 justify-center" src="{{asset('images/terrain.png')}}" alt="" />
+          <img class="justify-center w-35 h-35" src="{{asset('images/terrain.png')}}" alt="" />
           <div class="mt-4 text-center">
-            <h1 class="text-xl text-indigo-600  font-bold">Désireux d'avoir un terrain?</h1>
+            <h1 class="text-xl font-bold text-indigo-600">Désireux d'avoir un terrain?</h1>
             <p class="mt-4 text-indigo-600 ">Nous mettons à votre disposition des lots approuvés et à moindre coût.</p>
-            <button class=" mt-8 mb-4 py-2 pr-5 pl-5 text-gray-600 rounded-full bg-gray-600 tracking-widest hover:text-white hover:bg-indigo-600 transition duration-200">PLUS</button>
+            <button class="py-2 pl-5 pr-5 mt-8 mb-4 font-bold tracking-widest text-gray-600 transition duration-200 bg-gray-300 rounded-full nded-full hover:text-white hover:bg-indigo-600">PLUS</button>
           </div>
         </div>
       </div>

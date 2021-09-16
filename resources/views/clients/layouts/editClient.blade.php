@@ -8,7 +8,7 @@
                 <div class="grid grid-cols-6 gap-6">
                   <div class="col-span-2 md:col-span-2 sm:col-span-3">
                     <label for="Nom" class="block text-sm font-medium text-gray-700">Nom</label>
-                    <input type="text" name="nom" id="nom" value={{$client->nom}} autocomplete="nom" class="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                    <input type="text" name="nom" id="nom" value={{$client->nom}} autocomplete="nom" class="block w-full p-2 mt-1 border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
                     @error('nom')
                             <div class="font-semibold text-center text-red-600">{{ $errors->first('nom') }}  </div>
                     @enderror
@@ -16,7 +16,7 @@
     
                   <div class="col-span-2 md:col-span-2 sm:col-span-3">
                     <label for="prenom" class="block text-sm font-medium text-gray-700">Prenoms</label>
-                    <input type="text" name="prenom" id="prenom" value={{$client->prenom}} autocomplete="prenoms" class="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                    <input type="text" name="prenom" id="prenom" value={{$client->prenom}} autocomplete="prenoms" class="block w-full p-2 mt-1 border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
                     @error('prenom')
                             <div class="font-semibold text-center text-red-600">{{ $errors->first('prenom') }}  </div>
                     @enderror
@@ -24,7 +24,7 @@
     
                   <div class="col-span-6 md:col-span-2 sm:col-span-4">
                     <label for="email" class="block text-sm font-medium text-gray-700">Adresse Email</label>
-                    <input type="text" name="email" id="email" autocomplete="email" value={{$client->email}} class="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                    <input type="text" name="email" id="email" autocomplete="email" value={{$client->email}} class="block w-full p-2 mt-1 border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
                     @error('email')
                             <div class="font-semibold text-center text-red-600">{{ $errors->first('email') }}  </div>
                     @enderror
@@ -32,7 +32,7 @@
 
                   <div class="col-span-2 md:col-span-2 sm:col-span-3">
                     <label for="contact" class="block text-sm font-medium text-gray-700">Contact</label>
-                    <input type="text" name="contact" id="contact" value={{$client->contact}} autocomplete="contact" class="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                    <input type="text" name="contact" id="contact" value={{$client->contact}} autocomplete="contact" class="block w-full p-2 mt-1 border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
                     @error('contact')
                             <div class="font-semibold text-center text-red-600">{{ $errors->first('contact') }}  </div>
                     @enderror
@@ -40,7 +40,7 @@
 
                   <div class="col-span-6 md:col-span-2 sm:col-span-4">
                     <label for="date" class="block text-sm font-medium text-gray-700">Date de naissance</label>
-                    <input type="date" name="date" id="date" autocomplete="date" value={{$client->date}} class="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                    <input type="date" name="date" id="date" autocomplete="date" value={{$client->date}} class="block w-full p-2 mt-1 border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
                     @error('date')
                         <div class="font-semibold text-center text-red-600">{{ $errors->first('date') }}  </div>
                     @enderror
@@ -48,7 +48,7 @@
     
                   <div class="col-span-6 md:col-span-2 sm:col-span-3">
                     <label for="nationalite" class="block text-sm font-medium text-gray-700">Nationalité</label>
-                    <input type="text" name="nationalite" id="nationalite" autocomplete="nationalite" value={{$client->nationalite}} class="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                    <input type="text" name="nationalite" id="nationalite" autocomplete="nationalite" value={{$client->nationalite}} class="block w-full p-2 mt-1 border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
                     @error('nationalite')
                             <div class="font-semibold text-center text-red-600">{{ $errors->first('nationalite') }}  </div>
                     @enderror
@@ -56,7 +56,7 @@
     
                   <div class="col-span-6 md:col-span-2">
                     <label for="adresse" class="block text-sm font-medium text-gray-700">Adresse</label>
-                    <input type="text" name="adresse" id="adresse" autocomplete="adresse" value={{$client->adresse}} class="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                    <input type="text" name="adresse" id="adresse" autocomplete="adresse" value={{$client->adresse}} class="block w-full p-2 mt-1 border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
                     @error('adresse')
                             <div class="font-semibold text-center text-red-600">{{ $errors->first('adresse') }}  </div>
                     @enderror
@@ -80,7 +80,7 @@
     
                   <div class="col-span-6 md:col-span-2 sm:col-span-4">
                     <label for="numerPpiece" class="block text-sm font-medium text-gray-700">Numéro de la Pièce d'identité</label>
-                    <input type="text" name="numerPpiece" id="numerPpiece" autocomplete="numero-piece" value={{$client->numerPpiece}} class="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                    <input type="text" name="numerPpiece" id="numerPpiece" autocomplete="numero-piece" value={{$client->numerPpiece}} class="block w-full p-2 mt-1 border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
                     @error('numerPpiece')
                             <div class="font-semibold text-center text-red-600">{{ $errors->first('numerPpiece') }}  </div>
                     @enderror
@@ -89,7 +89,7 @@
     
                   <div class="col-span-6 md:col-span-2 sm:col-span-4">
                     <label for="typePiece" class="block text-sm font-medium text-gray-700">Type de Pièce d'identité</label>
-                    <input type="text" name="typePiece" id="typePiece" autocomplete="type-piece" value={{$client->typePiece}} class="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                    <input type="text" name="typePiece" id="typePiece" autocomplete="type-piece" value={{$client->typePiece}} class="block w-full p-2 mt-1 border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
                     @error('typePiece')
                             <div class="font-semibold text-center text-red-600">{{ $errors->first('typePiece') }}  </div>
                     @enderror

@@ -1,14 +1,14 @@
 
-<div class="mt-10 sm:mt-0">
+<div class="p-20 mt-1 sm:mt-0">
     <div class="">
         <form action="{{route('biens.updateVisite', $visite->id)}}" method="POST">
             @csrf
-            <div class="shadow overflow-hidden sm:rounded-md">
+            <div class="overflow-hidden shadow sm:rounded-md">
             <div class="px-4 py-5 bg-white sm:p-6">
                 <div class="grid grid-cols-6 gap-6">
                     <div class="col-span-2 md:col-span-2 sm:col-span-3">
                         <label for="nom" class="block text-sm font-medium text-gray-700">Nom</label>
-                        <input type="text" name="nom" id="nom" autocomplete="nom" value={{$visite->nom}} class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                        <input type="text" name="nom" id="nom" autocomplete="nom" value={{$visite->nom}} class="block w-full p-2 mt-1 border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
                         @error('nom')
                         <div class="font-semibold text-center text-red-600">{{ $errors->first('nom') }}  </div>
                         @enderror
@@ -16,7 +16,7 @@
 
                     <div class="col-span-2 md:col-span-2 sm:col-span-3">
                         <label for="prenom" class="block text-sm font-medium text-gray-700">Prenoms</label>
-                        <input type="text" name="prenom" id="prenom" autocomplete="prenoms" value={{$visite->prenom}} class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                        <input type="text" name="prenom" id="prenom" autocomplete="prenoms" value={{$visite->prenom}} class="block w-full p-2 mt-1 border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
                         @error('prenom')
                         <div class="font-semibold text-center text-red-600">{{ $errors->first('prenom') }}  </div>
                         @enderror
@@ -75,14 +75,14 @@
 
                     <div class="col-span-6 sm:col-span-3 lg:col-span-2">
                         <label for="lieuVisite" class="block text-sm font-medium text-gray-700">Lieu de la visite</label>
-                        <input type="text" name="lieuVisite" id="lieuVisite" value={{$visite->lieuVisite}} autocomplete="lieu-visite" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                        <input type="text" name="lieuVisite" id="lieuVisite" value={{$visite->lieuVisite}} autocomplete="lieu-visite" class="block w-full p-2 mt-1 border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
                         @error('lieuVisite')
                         <div class="font-semibold text-center text-red-600">{{ $errors->first('lieuVisite') }}  </div>
                         @enderror
                     </div>
 
-                    <div class="px-4 py-3 bg-gray-50 text-right sm:px-6">
-                        <button type="submit" class="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                    <div class="px-4 py-3 text-right bg-gray-50 sm:px-6">
+                        <button type="submit" class="inline-flex justify-center px-4 py-2 text-sm font-medium text-white bg-indigo-600 border border-transparent rounded-md shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
                         Enregistrer
                         </button>
                     </div>
