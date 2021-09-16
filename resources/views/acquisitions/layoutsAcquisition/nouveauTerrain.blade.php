@@ -67,14 +67,6 @@
                    <div class="font-semibold text-center text-red-600">{{ $errors->first('dateSign') }}  </div>
                   @enderror
                 </div>
-  
-                <div class="col-span-6 md:col-span-2 sm:col-span-4">
-                  <label for="valeur" class="block text-sm font-medium text-gray-700">Valeur</label>
-                  <input type="number" name="valeur" id="valeur" autocomplete="valeur" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
-                  @error('valeur')
-                   <div class="font-semibold text-center text-red-600">{{ $errors->first('valeur') }}  </div>
-                  @enderror
-                </div>
                 
                 <div class="col-span-6">
                   <label class="block text-sm font-medium text-gray-700">

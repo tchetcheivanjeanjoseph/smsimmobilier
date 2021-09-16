@@ -99,6 +99,28 @@ Route::middleware(['auth:sanctum', 'verified'])->group(function (){
     Route::post('/locations/updateLocation/{id}','App\Http\Controllers\LocationController@update')->name('locations.updateLocation');
     Route::get('/locations/deleteLocation/{id}','App\Http\Controllers\LocationController@destroy')->name('locations.deleteLocation');
 
+    //Routes Acquisitions
+
+    Route::get('/acquisitions', function(){
+        return view('acquisitions.accueil');
+    })-> name('acquisitions.accueil');
+
+    Route::get('/acquisitions/listeContrats','App\Http\Controllers\AcquisitionController@index')->name('acquisitions.listeAcquisition');
+
+    Route::get('/acquisitions/locatairesAJour','App\Http\Controllers\AcquisitionController@index')-> name('acquisitions.listeDossiersEnCours');
+
+    Route::get('/acquisitions/locatairesNonAJour','App\Http\Controllers\AcquisitionController@index')-> name ('acquisitions.listeDossiersArchiver');
+
+    Route::get('/acquisitions/nouvelleAcquisition', function(){
+        return view('acquisitions.nouvelleAcquisition');
+    })-> name ('acquisitions.nouvelleAcquisition');
+
+
+
+    Route::get('/locations/editLocation/{id}','App\Http\Controllers\LocationController@edit')->name('locations.editLocation');
+    Route::post('/locations/updateLocation/{id}','App\Http\Controllers\LocationController@update')->name('locations.updateLocation');
+    Route::get('/locations/deleteLocation/{id}','App\Http\Controllers\LocationController@destroy')->name('locations.deleteLocation');
+
 
     //CREATION
         
@@ -121,4 +143,8 @@ Route::middleware(['auth:sanctum', 'verified'])->group(function (){
         //création de locations
 
         Route::post('/createLocation','App\Http\Controllers\LocationController@store')->name('createLocation');
+
+        //création d'acquisitions
+
+        Route::post('/createAcquisition','App\Http\Controllers\AcquisitionController@store')->name('createAcquisition');
 });
