@@ -111,6 +111,8 @@ Route::middleware(['auth:sanctum', 'verified'])->group(function (){
 
     Route::get('/acquisitions/locatairesNonAJour','App\Http\Controllers\AcquisitionController@index')-> name ('acquisitions.listeDossiersArchiver');
 
+    Route::get('/acquisitions/update/{id}','App\Http\Controllers\AcquisitionController@update')-> name ('acquisitions.update');
+
     Route::get('/acquisitions/nouvelleAcquisition', function(){
         return view('acquisitions.nouvelleAcquisition');
     })-> name ('acquisitions.nouvelleAcquisition');

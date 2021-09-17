@@ -78,26 +78,19 @@ class AcquisitionController extends Controller
      * @param  \App\Models\Acquisition  $acquisition
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, int $id)
+    public function update(int $id)
     {
-        $validateData = request()->validate([
-            'bienTerrain' => 'required|min:1',
-            'nomAcquereur' => 'required|min:1',
-            'dateAcquisition' => 'required',
-            'conventionAchat'=> 'required',
-          
-        ]);
+        $acquis = Acquisition::where('id', $id)->first();
 
-        $acquisition = Acquisition::find($id);
-        $acquisition->update([
+        if($acquis->status < 5)
+        {
+            $acquis->status = $acquis->status+1;
+        }
 
-            'bienTerrain' => 'required|min:1',
-            'nomAcquereur' => 'required|min:1',
-            'dateAcquisition' => 'required',
-            'conventionAchat'=> 'required',
-        ]);
+        $acquis->save();
+        
 
-        return redirect()->route('acquisitions.listeAcquisition')->with('success', 'L\'enregistrement a été effectué avec succès');
+        return redirect()->back();
     }
 
     /**
