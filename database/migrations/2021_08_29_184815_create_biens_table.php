@@ -15,6 +15,7 @@ class CreateBiensTable extends Migration
     {
         Schema::create('biens', function (Blueprint $table) {
             $table->id();
+            $table->string('reference')->nullable();
             $table->string('lot')->nullable(); 
             $table->string('ilot')->nullable(); 
             $table->string('titreFoncier')->nullable(); 

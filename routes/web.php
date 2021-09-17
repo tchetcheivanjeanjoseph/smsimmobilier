@@ -101,8 +101,8 @@ Route::middleware(['auth:sanctum', 'verified'])->group(function (){
 
     //Routes Acquisitions
 
-    Route::get('/acquisitions', function(){
-        return view('acquisitions.accueil');
+    Route::get('/acquisition', function(){
+        return view('acquisitions.MyAcceuil');
     })-> name('acquisitions.accueil');
 
     Route::get('/acquisitions/listeContrats','App\Http\Controllers\AcquisitionController@index')->name('acquisitions.listeAcquisition');

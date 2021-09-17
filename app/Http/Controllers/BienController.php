@@ -61,6 +61,11 @@ class BienController extends Controller
         ]);
 
         $bien = Bien::create($validateData);
+        
+        $bien->reference = "SMS-".strval(date('Y'))."_".strval(date('m')).$request->ville;
+
+       
+        $bien->save();
              
         
         return redirect()->back()->with('success', 'L\'enregistrement a été effectué avec succès');

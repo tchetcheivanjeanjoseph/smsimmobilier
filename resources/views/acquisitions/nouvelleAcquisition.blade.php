@@ -3,7 +3,7 @@
 
 @section ('contenueAcquisition')
     <div >
-        @include('biens.layoutsAcquisition.nouveauTerrain')
+        @livewire('acqisition')
     </div>
     
 @endsection

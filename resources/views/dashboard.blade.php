@@ -49,7 +49,7 @@
                         <span class="ml-2">Location</span>
                     </a>
                     </li>
-                    <li class=" {{ Request::routeIs('dashboard') ? ' text-black bg-gray-50 font-bold' : ' ' }}  flex flex-row px-4 py-4 mb-2 border-gray-300 rounded-lg hover:text-black hover:bg-gray-100">
+                    <li class=" {{ Request::routeIs('acquisitions.*') ? ' text-black bg-gray-50 font-bold' : ' ' }}  flex flex-row px-4 py-4 mb-2 border-gray-300 rounded-lg hover:text-black hover:bg-gray-100">
                     <span>
                     <svg class="w-5 h-5 text-indigo-500"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <circle cx="5" cy="5" r="1" />  <circle cx="12" cy="5" r="1" />  <circle cx="19" cy="5" r="1" />  <circle cx="5" cy="12" r="1" />  <circle cx="12" cy="12" r="1" />  <circle cx="19" cy="12" r="1" />  <circle cx="5" cy="19" r="1" />  <circle cx="12" cy="19" r="1" />  <circle cx="19" cy="19" r="1" /></svg>
                     </span>

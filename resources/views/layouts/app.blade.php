@@ -13,10 +13,14 @@
         <!-- Styles -->
         <link rel="stylesheet" href="{{ mix('css/app.css') }}">
 
+    
         @livewireStyles
 
         <!-- Scripts -->
         <script src="{{ mix('js/app.js') }}" defer></script>
+        
+        <script defer src="https://unpkg.com/alpinejs@3.3.4/dist/cdn.min.js"></script>
+        
     </head>
     <body class="font-sans antialiased">
         <x-jet-banner />
@@ -45,6 +49,11 @@
       
         @stack('modals')
 
+       
         @livewireScripts
+
+
+        @stack('scripts')
+
     </body>
 </html>
